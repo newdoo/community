@@ -11,7 +11,7 @@ class UIToolbar extends React.Component {
                 leftElement={
                     <Image style={{width: 85, height: 30, resizeMode: 'contain'}}  source={require('./numixIcon.png')} />
                 }
-                centerElement="MLBPARK"
+                // centerElement="MLBPARK"
                 searchable={{
                     autoFocus: true,
                     placeholder: 'Search',

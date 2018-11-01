@@ -12,25 +12,7 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
 import styles from './App.scss';
 
 import UIToolbar from './components/UIToolbar';
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#333333',
-//     marginBottom: 5,
-//   },
-// });
+import UIWebView from './components/UIWebView';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -44,11 +26,14 @@ export default class App extends React.Component {
     return (
       <View style={styles.root}>
         <UIToolbar style={styles.toolbar}/>
+        <UIWebView />
+        { /* 
         <View style={styles.container}>
           <Text style={styles.welcome}>Welcome to React Native! Hi doodoo123</Text>
           <Text style={styles.instructions}>To get started, edit App.js</Text>
           <Text style={styles.instructions}>{instructions}</Text>
         </View>
+        */ }
       </View>
     );
   }
