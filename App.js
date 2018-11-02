@@ -25,7 +25,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.root}>
-        <UIToolbar style={styles.toolbar}/>
+        {/* <UIToolbar style={styles.toolbar}/> */}
         <UIWebView />
         { /* 
         <View style={styles.container}>
